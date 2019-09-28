@@ -8,7 +8,7 @@ public class CommonMethods {
 
 	public static WebDriver driver;
 	public static WebDriver browserLaunchChrome() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Senthil B\\eclipse-workspace\\CucumberProject\\Dirvers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\\\Users\\\\Senthil B\\\\eclipse-workspace\\\\CucumberProject\\\\New Driver\\\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
@@ -25,5 +25,8 @@ public static void type(WebElement element, String data) {
 
 public static void loadUrl(String url) {
 	driver.get(url);
+}
+public static void closebrowser() {
+	driver.close();
 }
 }
