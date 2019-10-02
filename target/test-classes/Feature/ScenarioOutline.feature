@@ -1,8 +1,9 @@
 Feature: Facebook Login
 Scenario Outline: scenario description
-	Given Facebook homepage launch
-		And User enter "<Username>" and "<Password>" and click login button
-		Then Close the browser
+	Given Browser launch
+	When Home page
+	Then User enter "<Username>" and "<Password>" and click login button
+	Then Close the browser
 		
 		Examples:
 		| Username | Password | 
