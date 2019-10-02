@@ -11,4 +11,11 @@ Scenario Outline: scenario description
 		| value3_1 | value3_2 | value3_3 |: Homepage ogin
 Given Browser launch
 When Enter user name and password
+Then Enter new page
+Then Enter new page
+Then Enter new page
+Then Enter new page
+Then Enter new page
+Then Enter new page
+Then Enter new page
 Then logout
