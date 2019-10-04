@@ -15,6 +15,22 @@ private WebElement username;
 private WebElement password;
 @FindBy(id ="u_0_4")
 private WebElement submit;
+@FindBy(xpath="//input[@name='firstname']")
+private WebElement firstname;
+@FindBy(xpath="//input[@name='lastname']")
+private WebElement surname;
+public WebElement getFirstname() {
+	return firstname;
+}
+public void setFirstname(WebElement firstname) {
+	this.firstname = firstname;
+}
+public WebElement getSurname() {
+	return surname;
+}
+public void setSurname(WebElement surname) {
+	this.surname = surname;
+}
 public WebElement getSubmit() {
 	return submit;
 }

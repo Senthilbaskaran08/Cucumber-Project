@@ -29,4 +29,8 @@ public static void loadUrl(String url) {
 public static void closebrowser() {
 	driver.close();
 }
+
+public static void typeObject(WebElement firstname, Object data) {
+	
+}
 }
